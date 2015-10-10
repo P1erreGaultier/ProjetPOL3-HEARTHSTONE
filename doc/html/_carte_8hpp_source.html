@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>HearthStone:  Fichier source de include/Modele/Joueur/Deck/Carte/Carte.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">HearthStone
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Bienvenue dans la taverne</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_carte_8hpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Carte.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_carte_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">   Fichier Carte.hpp</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">   Définition du type Carte</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">* @author Pierre Gaultier, Théo Dolez</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef CARTE_HPP</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CARTE_HPP</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span> <span class="comment">// pour le type std::string</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_carte.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_carte.html">Carte</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;   <span class="keyword">private</span> :</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;   <span class="keywordtype">int</span> pdv;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;   <span class="keywordtype">int</span> pdvmax;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;   <span class="keywordtype">int</span> pa;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;   std::string nom;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;   <span class="keywordtype">int</span> coutmana;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;   <span class="keywordtype">bool</span> charge;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;   <span class="keywordtype">bool</span> provoc;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;   <span class="keywordtype">bool</span> malinvoc;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;   <span class="keywordtype">bool</span> sortilege;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;   <span class="keywordtype">int</span> fct;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;   std::string description;   </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;   </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;   <span class="keyword">public</span> :</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_carte.html#a06daaca86c31c80f8308f4a81d46dc9b">Carte</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_carte.html#a06daaca86c31c80f8308f4a81d46dc9b">Carte</a>(<span class="keywordtype">int</span> pdv, <span class="keywordtype">int</span> pa, std::string nom, <span class="keywordtype">int</span> coutmana, <span class="keywordtype">bool</span> charge, <span class="keywordtype">bool</span> provoc, <span class="keywordtype">bool</span> sort, <span class="keywordtype">int</span> f, std::string des); <span class="comment">//construceur</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_carte.html#a63300ff55c58b5d5b1674a3fc8f25910">~Carte</a>(); <span class="comment">// destructeur</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_carte.html#a657918ef04b48d042985550cc9531b96">getPdv</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a002eabf379874c8a989d0ee4469074d0">setPdv</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_carte.html#a3d71e111f10666ca64f94c48ca2f215f">getPdvmax</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#aa997fa354a645b125491589dbc4631d1">setPdvmax</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_carte.html#a581e595258304eb2ca44dbcf24fade5b">getPa</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#ab84e1045db524abd89c715ce8c9e57eb">setPa</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::string <a class="code" href="class_carte.html#a3650c2d0ea9877fe29f4673f430daa8e">getNom</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a09ba2c6fba7ce1780e3bfa52f7adb13a">setNom</a>(std::string n);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_carte.html#a7af45415441059ab3f3696d3ef711c6a">getCoutmana</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a7965f40ee312b74c9e65601156c8a1b9">setCoutmana</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_carte.html#aba4e16959b49ba9c7673c6c3ac848da4">getCharge</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#aa432c0b924d602dd602dbec76a2a05fd">setCharge</a>(<span class="keywordtype">bool</span> c);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_carte.html#aeaa95af6ce4e589556b3e0258a1a1fd5">getProvoc</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a5e107806db0095a43d360eb5aba4f268">setProvoc</a>(<span class="keywordtype">bool</span> p);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_carte.html#a7586f5cb80e50c331b85b52a99b273f1">getMalinvoc</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a8ae1e50c276ec598c722cc2090aa60bc">setMalinvoc</a>(<span class="keywordtype">bool</span> m);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_carte.html#a787e408176618c033f3ca3f2477d954e">getSortilege</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#adea41dd43ce6833bc82d515063b211b2">setSortilege</a>(<span class="keywordtype">bool</span> m);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_carte.html#abe483c0dfd894f74a7e70bd09c2f81db">getFct</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a2dd4e1213a7c8ac586c899f480565e40">setFct</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    std::string <a class="code" href="class_carte.html#a71f1d9f42828cd1904d41072c7e1364b">getDescription</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_carte.html#a969792359230516af5306af9c332e4cf">setDescription</a>(std::string des);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    std::string <a class="code" href="class_carte.html#aa87e41eb0a7e1c296e89a3f8f1bdf98b">toString</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}; <span class="comment">// class Carte</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#include &quot;../../../../../src/Modele/Joueur/Deck/Carte/Carte.cpp&quot;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // CARTE_HPP</span></div>
+<div class="ttc" id="class_carte_html_abe483c0dfd894f74a7e70bd09c2f81db"><div class="ttname"><a href="class_carte.html#abe483c0dfd894f74a7e70bd09c2f81db">Carte::getFct</a></div><div class="ttdeci">int getFct()</div><div class="ttdef"><b>Definition:</b> Carte.cpp:237</div></div>
+<div class="ttc" id="class_carte_html_aa432c0b924d602dd602dbec76a2a05fd"><div class="ttname"><a href="class_carte.html#aa432c0b924d602dd602dbec76a2a05fd">Carte::setCharge</a></div><div class="ttdeci">void setCharge(bool c)</div><div class="ttdef"><b>Definition:</b> Carte.cpp:171</div></div>
+<div class="ttc" id="class_carte_html_a06daaca86c31c80f8308f4a81d46dc9b"><div class="ttname"><a href="class_carte.html#a06daaca86c31c80f8308f4a81d46dc9b">Carte::Carte</a></div><div class="ttdeci">Carte()</div></div>
+<div class="ttc" id="class_carte_html_a2dd4e1213a7c8ac586c899f480565e40"><div class="ttname"><a href="class_carte.html#a2dd4e1213a7c8ac586c899f480565e40">Carte::setFct</a></div><div class="ttdeci">void setFct(int i)</div><div class="ttdef"><b>Definition:</b> Carte.cpp:245</div></div>
+<div class="ttc" id="class_carte_html_a787e408176618c033f3ca3f2477d954e"><div class="ttname"><a href="class_carte.html#a787e408176618c033f3ca3f2477d954e">Carte::getSortilege</a></div><div class="ttdeci">bool getSortilege()</div><div class="ttdef"><b>Definition:</b> Carte.cpp:212</div></div>
+<div class="ttc" id="class_carte_html_adea41dd43ce6833bc82d515063b211b2"><div class="ttname"><a href="class_carte.html#adea41dd43ce6833bc82d515063b211b2">Carte::setSortilege</a></div><div class="ttdeci">void setSortilege(bool m)</div></div>
+<div class="ttc" id="class_carte_html_a5e107806db0095a43d360eb5aba4f268"><div class="ttname"><a href="class_carte.html#a5e107806db0095a43d360eb5aba4f268">Carte::setProvoc</a></div><div class="ttdeci">void setProvoc(bool p)</div><div class="ttdef"><b>Definition:</b> Carte.cpp:187</div></div>
+<div class="ttc" id="class_carte_html"><div class="ttname"><a href="class_carte.html">Carte</a></div><div class="ttdef"><b>Definition:</b> Carte.hpp:17</div></div>
+<div class="ttc" id="class_carte_html_a09ba2c6fba7ce1780e3bfa52f7adb13a"><div class="ttname"><a href="class_carte.html#a09ba2c6fba7ce1780e3bfa52f7adb13a">Carte::setNom</a></div><div class="ttdeci">void setNom(std::string n)</div><div class="ttdef"><b>Definition:</b> Carte.cpp:132</div></div>
+<div class="ttc" id="class_carte_html_a7965f40ee312b74c9e65601156c8a1b9"><div class="ttname"><a href="class_carte.html#a7965f40ee312b74c9e65601156c8a1b9">Carte::setCoutmana</a></div><div class="ttdeci">void setCoutmana(int i)</div><div class="ttdef"><b>Definition:</b> Carte.cpp:153</div></div>
+<div class="ttc" id="class_carte_html_a581e595258304eb2ca44dbcf24fade5b"><div class="ttname"><a href="class_carte.html#a581e595258304eb2ca44dbcf24fade5b">Carte::getPa</a></div><div class="ttdeci">int getPa()</div><div class="ttdef"><b>Definition:</b> Carte.cpp:102</div></div>
+<div class="ttc" id="class_carte_html_a7586f5cb80e50c331b85b52a99b273f1"><div class="ttname"><a href="class_carte.html#a7586f5cb80e50c331b85b52a99b273f1">Carte::getMalinvoc</a></div><div class="ttdeci">bool getMalinvoc()</div><div class="ttdef"><b>Definition:</b> Carte.cpp:196</div></div>
+<div class="ttc" id="class_carte_html_a63300ff55c58b5d5b1674a3fc8f25910"><div class="ttname"><a href="class_carte.html#a63300ff55c58b5d5b1674a3fc8f25910">Carte::~Carte</a></div><div class="ttdeci">~Carte()</div><div class="ttdef"><b>Definition:</b> Carte.cpp:52</div></div>
+<div class="ttc" id="class_carte_html_a3d71e111f10666ca64f94c48ca2f215f"><div class="ttname"><a href="class_carte.html#a3d71e111f10666ca64f94c48ca2f215f">Carte::getPdvmax</a></div><div class="ttdeci">int getPdvmax()</div><div class="ttdef"><b>Definition:</b> Carte.cpp:82</div></div>
+<div class="ttc" id="class_carte_html_a969792359230516af5306af9c332e4cf"><div class="ttname"><a href="class_carte.html#a969792359230516af5306af9c332e4cf">Carte::setDescription</a></div><div class="ttdeci">void setDescription(std::string des)</div><div class="ttdef"><b>Definition:</b> Carte.cpp:229</div></div>
+<div class="ttc" id="class_carte_html_ab84e1045db524abd89c715ce8c9e57eb"><div class="ttname"><a href="class_carte.html#ab84e1045db524abd89c715ce8c9e57eb">Carte::setPa</a></div><div class="ttdeci">void setPa(int i)</div><div class="ttdef"><b>Definition:</b> Carte.cpp:112</div></div>
+<div class="ttc" id="class_carte_html_a657918ef04b48d042985550cc9531b96"><div class="ttname"><a href="class_carte.html#a657918ef04b48d042985550cc9531b96">Carte::getPdv</a></div><div class="ttdeci">int getPdv()</div><div class="ttdef"><b>Definition:</b> Carte.cpp:62</div></div>
+<div class="ttc" id="class_carte_html_a002eabf379874c8a989d0ee4469074d0"><div class="ttname"><a href="class_carte.html#a002eabf379874c8a989d0ee4469074d0">Carte::setPdv</a></div><div class="ttdeci">void setPdv(int i)</div><div class="ttdef"><b>Definition:</b> Carte.cpp:72</div></div>
+<div class="ttc" id="class_carte_html_a8ae1e50c276ec598c722cc2090aa60bc"><div class="ttname"><a href="class_carte.html#a8ae1e50c276ec598c722cc2090aa60bc">Carte::setMalinvoc</a></div><div class="ttdeci">void setMalinvoc(bool m)</div><div class="ttdef"><b>Definition:</b> Carte.cpp:204</div></div>
+<div class="ttc" id="class_carte_html_a7af45415441059ab3f3696d3ef711c6a"><div class="ttname"><a href="class_carte.html#a7af45415441059ab3f3696d3ef711c6a">Carte::getCoutmana</a></div><div class="ttdeci">int getCoutmana()</div><div class="ttdef"><b>Definition:</b> Carte.cpp:143</div></div>
+<div class="ttc" id="class_carte_html_aa87e41eb0a7e1c296e89a3f8f1bdf98b"><div class="ttname"><a href="class_carte.html#aa87e41eb0a7e1c296e89a3f8f1bdf98b">Carte::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdef"><b>Definition:</b> Carte.cpp:255</div></div>
+<div class="ttc" id="class_carte_html_aba4e16959b49ba9c7673c6c3ac848da4"><div class="ttname"><a href="class_carte.html#aba4e16959b49ba9c7673c6c3ac848da4">Carte::getCharge</a></div><div class="ttdeci">bool getCharge()</div><div class="ttdef"><b>Definition:</b> Carte.cpp:163</div></div>
+<div class="ttc" id="class_carte_html_aa997fa354a645b125491589dbc4631d1"><div class="ttname"><a href="class_carte.html#aa997fa354a645b125491589dbc4631d1">Carte::setPdvmax</a></div><div class="ttdeci">void setPdvmax(int i)</div><div class="ttdef"><b>Definition:</b> Carte.cpp:92</div></div>
+<div class="ttc" id="class_carte_html_a3650c2d0ea9877fe29f4673f430daa8e"><div class="ttname"><a href="class_carte.html#a3650c2d0ea9877fe29f4673f430daa8e">Carte::getNom</a></div><div class="ttdeci">std::string getNom()</div><div class="ttdef"><b>Definition:</b> Carte.cpp:122</div></div>
+<div class="ttc" id="class_carte_html_a71f1d9f42828cd1904d41072c7e1364b"><div class="ttname"><a href="class_carte.html#a71f1d9f42828cd1904d41072c7e1364b">Carte::getDescription</a></div><div class="ttdeci">std::string getDescription()</div><div class="ttdef"><b>Definition:</b> Carte.cpp:221</div></div>
+<div class="ttc" id="class_carte_html_aeaa95af6ce4e589556b3e0258a1a1fd5"><div class="ttname"><a href="class_carte.html#aeaa95af6ce4e589556b3e0258a1a1fd5">Carte::getProvoc</a></div><div class="ttdeci">bool getProvoc()</div><div class="ttdef"><b>Definition:</b> Carte.cpp:179</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_9a28adb27b1e736139febff9edba2562.html">Modele</a></li><li class="navelem"><a class="el" href="dir_8d0ad339b86dbde4d37d43c387ce9b62.html">Joueur</a></li><li class="navelem"><a class="el" href="dir_f42cbb6a4a41280e131a8fdf67010b3b.html">Deck</a></li><li class="navelem"><a class="el" href="dir_db7a4753af11a104ca4f0697bd7cc954.html">Carte</a></li><li class="navelem"><a class="el" href="_carte_8hpp.html">Carte.hpp</a></li>
+    <li class="footer">Généré le Lundi 1 Décembre 2014 17:24:07 pour HearthStone par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

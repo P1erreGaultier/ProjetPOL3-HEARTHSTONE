@@ -1,0 +1,31 @@
+\hypertarget{_guerrier_8hpp}{\section{Guerrier.\-hpp}
+\label{_guerrier_8hpp}\index{include/\-Modele/\-Joueur/\-Guerrier.\-hpp@{include/\-Modele/\-Joueur/\-Guerrier.\-hpp}}
+}
+
+\begin{DoxyCode}
+00001 
+00006 \textcolor{preprocessor}{#ifndef GUERRIER\_HPP}
+00007 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define GUERRIER\_HPP}
+00008 \textcolor{preprocessor}{}
+00009 \textcolor{preprocessor}{#include <string>} \textcolor{comment}{// pour le type std::string}
+00010 \textcolor{preprocessor}{#include "\hyperlink{_joueur_8hpp}{Joueur.hpp}"}
+00011 \textcolor{preprocessor}{#include "../../Controleur/ComportementPouvoir/ComportementPouvoirGuerrier.hpp"}
+00012 
+00013 
+00014 \textcolor{comment}{/******************************************************************************/}
+00015 
+\hypertarget{_guerrier_8hpp_source_l00016}{}\hyperlink{class_guerrier}{00016} \textcolor{keyword}{class }\hyperlink{class_guerrier}{Guerrier}: \textcolor{keyword}{public} \hyperlink{class_joueur}{Joueur}
+00017 \{   
+00018 
+00019    \textcolor{keyword}{public} :
+00020       \textcolor{comment}{//Constructeur/Destructeur}
+00021       \hyperlink{class_guerrier_a08622f52e49c7fd2695ce215b3ad9aec}{Guerrier}(std::string nom, std::string fichier);
+00022       \hyperlink{class_guerrier_a83ec8ec6ced25a349249d0cdc70c75b6}{~Guerrier}();
+00023    
+00024   
+00025 \};
+00026 
+00027 \textcolor{preprocessor}{#include "../../../src/Modele/Joueur/Guerrier.cpp"}
+00028 
+00029 \textcolor{preprocessor}{#endif // Guerrier\_HPP}
+\end{DoxyCode}

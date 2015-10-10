@@ -1,0 +1,100 @@
+\hypertarget{class_etat_double_no}{\section{Référence de la classe Etat\-Double\-No}
+\label{class_etat_double_no}\index{Etat\-Double\-No@{Etat\-Double\-No}}
+}
+
+
+{\ttfamily \#include $<$Etat\-Double\-No.\-hpp$>$}
+
+Graphe d'héritage de Etat\-Double\-No\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_etat_double_no}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_etat_double_no_ac89c20bba357b6fff0d3d8aeead6b894}{Etat\-Double\-No} (\hyperlink{class_jeu}{Jeu} $\ast$j)
+\item 
+\hyperlink{class_etat_double_no_a5833701f2f11e8902ceb31626076dd2e}{$\sim$\-Etat\-Double\-No} ()
+\item 
+\hyperlink{class_jeu}{Jeu} $\ast$ \hyperlink{class_etat_double_no_a51f05fabae25436634e3b8c1ecdf5aef}{get\-Jeu} ()
+\item 
+int \hyperlink{class_etat_double_no_a01af5700d0b3bd927af0d65f95395256}{afficher\-Choix\-Etat} ()
+\item 
+void \hyperlink{class_etat_double_no_a888b25f87b975d3d92bfaa2cf9ce064d}{fin\-Tour} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_jeu}{Jeu} $\ast$ \hyperlink{class_etat_double_no_ac1166f725800d6a7f9c0c83bf6d7665e}{jeu}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_etat_double_no_ac89c20bba357b6fff0d3d8aeead6b894}{\index{Etat\-Double\-No@{Etat\-Double\-No}!Etat\-Double\-No@{Etat\-Double\-No}}
+\index{Etat\-Double\-No@{Etat\-Double\-No}!EtatDoubleNo@{Etat\-Double\-No}}
+\subsubsection[{Etat\-Double\-No}]{\setlength{\rightskip}{0pt plus 5cm}Etat\-Double\-No\-::\-Etat\-Double\-No (
+\begin{DoxyParamCaption}
+\item[{{\bf Jeu} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_etat_double_no_ac89c20bba357b6fff0d3d8aeead6b894}
+Constructeur. 
+\begin{DoxyParams}{Paramètres}
+{\em j} & le jeu \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_etat_double_no_a5833701f2f11e8902ceb31626076dd2e}{\index{Etat\-Double\-No@{Etat\-Double\-No}!$\sim$\-Etat\-Double\-No@{$\sim$\-Etat\-Double\-No}}
+\index{$\sim$\-Etat\-Double\-No@{$\sim$\-Etat\-Double\-No}!EtatDoubleNo@{Etat\-Double\-No}}
+\subsubsection[{$\sim$\-Etat\-Double\-No}]{\setlength{\rightskip}{0pt plus 5cm}Etat\-Double\-No\-::$\sim$\-Etat\-Double\-No (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_etat_double_no_a5833701f2f11e8902ceb31626076dd2e}
+Destructeur 
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_etat_double_no_a01af5700d0b3bd927af0d65f95395256}{\index{Etat\-Double\-No@{Etat\-Double\-No}!afficher\-Choix\-Etat@{afficher\-Choix\-Etat}}
+\index{afficher\-Choix\-Etat@{afficher\-Choix\-Etat}!EtatDoubleNo@{Etat\-Double\-No}}
+\subsubsection[{afficher\-Choix\-Etat}]{\setlength{\rightskip}{0pt plus 5cm}int Etat\-Double\-No\-::afficher\-Choix\-Etat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_etat_double_no_a01af5700d0b3bd927af0d65f95395256}
+Methode qui affiche les choix du \hyperlink{class_joueur}{Joueur} disponibles pour cet \hyperlink{class_etat}{Etat} et les exécute si le \hyperlink{class_joueur}{Joueur} entre les numéros associés. 
+
+Implémente \hyperlink{class_etat_ad76848f13da0e8e7f690a745e3075ab2}{Etat}.
+
+\hypertarget{class_etat_double_no_a888b25f87b975d3d92bfaa2cf9ce064d}{\index{Etat\-Double\-No@{Etat\-Double\-No}!fin\-Tour@{fin\-Tour}}
+\index{fin\-Tour@{fin\-Tour}!EtatDoubleNo@{Etat\-Double\-No}}
+\subsubsection[{fin\-Tour}]{\setlength{\rightskip}{0pt plus 5cm}void Etat\-Double\-No\-::fin\-Tour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_etat_double_no_a888b25f87b975d3d92bfaa2cf9ce064d}
+Methode qui termine le tour en cours, et lance le suivant 
+
+Implémente \hyperlink{class_etat_a41a3505b7477318292582ae544e7e0dd}{Etat}.
+
+\hypertarget{class_etat_double_no_a51f05fabae25436634e3b8c1ecdf5aef}{\index{Etat\-Double\-No@{Etat\-Double\-No}!get\-Jeu@{get\-Jeu}}
+\index{get\-Jeu@{get\-Jeu}!EtatDoubleNo@{Etat\-Double\-No}}
+\subsubsection[{get\-Jeu}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Jeu} $\ast$ Etat\-Double\-No\-::get\-Jeu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_etat_double_no_a51f05fabae25436634e3b8c1ecdf5aef}
+Methode qui renvoie le jeu \begin{DoxyReturn}{Renvoie}
+jeu le jeu 
+\end{DoxyReturn}
+
+
+\subsection{Documentation des données membres}
+\hypertarget{class_etat_double_no_ac1166f725800d6a7f9c0c83bf6d7665e}{\index{Etat\-Double\-No@{Etat\-Double\-No}!jeu@{jeu}}
+\index{jeu@{jeu}!EtatDoubleNo@{Etat\-Double\-No}}
+\subsubsection[{jeu}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Jeu}$\ast$ Etat\-Double\-No\-::jeu\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_etat_double_no_ac1166f725800d6a7f9c0c83bf6d7665e}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+include/\-Controleur/\hyperlink{_etat_double_no_8hpp}{Etat\-Double\-No.\-hpp}\item 
+src/\-Controleur/\hyperlink{_etat_double_no_8cpp}{Etat\-Double\-No.\-cpp}\end{DoxyCompactItemize}

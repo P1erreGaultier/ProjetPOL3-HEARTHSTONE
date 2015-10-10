@@ -1,0 +1,2 @@
+4 3 Soldat_d'élite_kor'kron 4 1 0 0 0 blablabla
+0 0 Langue_de_feu 4 0 0 1 1 Brule_votre_ennemi

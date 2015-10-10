@@ -1,0 +1,365 @@
+\hypertarget{class_joueur}{\section{Référence de la classe Joueur}
+\label{class_joueur}\index{Joueur@{Joueur}}
+}
+
+
+{\ttfamily \#include $<$Joueur.\-hpp$>$}
+
+Graphe d'héritage de Joueur\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_joueur}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_joueur_a055a0bc38f47a424243d44e7078af129}{Joueur} (std\-::string nom, std\-::string fichier)
+\item 
+\hyperlink{class_joueur_a9fb594f755601ee77ce5884c4c0861f3}{$\sim$\-Joueur} ()
+\item 
+int \hyperlink{class_joueur_a3deefa81ebbb921d6cef52322777dee7}{get\-Pdv} ()
+\item 
+int \hyperlink{class_joueur_adab9394b18e1e65a77aa8dad7b51ec28}{get\-Armure} ()
+\item 
+void \hyperlink{class_joueur_a2ff017f6e65cad383d00d153ece08045}{set\-A\-R\-M\-U\-R\-E} (int arm)
+\item 
+int \hyperlink{class_joueur_ac950c36b21e1dfc7038d9bb4e1f53361}{get\-Pdm} ()
+\item 
+void \hyperlink{class_joueur_a199d04e5240f4078ba2f3da2431f0bb2}{set\-P\-D\-M} (int npdm)
+\item 
+int \hyperlink{class_joueur_ab9297495de7521ac2198c7ce8d38191c}{get\-Pdm\-Tour} ()
+\item 
+void \hyperlink{class_joueur_a3984848768db7e175aeeb51ca89e4eb3}{set\-P\-D\-M\-Tour} (int npdmt)
+\item 
+void \hyperlink{class_joueur_ac4b9408bed0a64ac63188f7f8e1a73d9}{set\-P\-D\-V} (int npdv)
+\item 
+std\-::string \hyperlink{class_joueur_a5ba8036208a35efd6bf37a86b36063b0}{get\-Nom} ()
+\item 
+void \hyperlink{class_joueur_afa24ba80453522ff059e7e6f46653749}{set\-Nom} (std\-::string n)
+\item 
+\hyperlink{class_joueur}{Joueur} $\ast$ \hyperlink{class_joueur_a0a2f88581ef12441b03a1cc4ed721b40}{get\-Joueur\-Autre} ()
+\item 
+void \hyperlink{class_joueur_a81aa9fca9a001be893bfaa607681b086}{set\-Joueur\-Autre} (\hyperlink{class_joueur}{Joueur} $\ast$j)
+\item 
+\hyperlink{class_comportement_pouvoir}{Comportement\-Pouvoir} $\ast$ \hyperlink{class_joueur_a85df9863c4257fe7405a6b1fe7c1e1ef}{get\-C\-P} ()
+\item 
+void \hyperlink{class_joueur_a7b408ea957e1b125a509ec8e88b2c148}{set\-C\-P} (\hyperlink{class_comportement_pouvoir}{Comportement\-Pouvoir} $\ast$C\-P)
+\item 
+std\-::string \hyperlink{class_joueur_a99e2e0934bb9307f577d9fa3f219a7b6}{to\-String} ()
+\item 
+void \hyperlink{class_joueur_a91239ad650edadbee5b1b51d19242d28}{utiliser\-Pouvoir} ()
+\item 
+bool \hyperlink{class_joueur_a0344bd2b30346f73e23239b62647e26d}{get\-Pouvoir\-Utilise} ()
+\item 
+void \hyperlink{class_joueur_a57f6f8d3ff6ba9b5026a51b23e03cd0a}{set\-Pouvoir\-Utilise} (bool p)
+\item 
+\hyperlink{class_deck}{Deck} $\ast$ \hyperlink{class_joueur_a5f7a140f00766144edf7d6a5b0f236b7}{get\-Deck} ()
+\item 
+std\-::vector$<$ \hyperlink{class_carte}{Carte} $>$ $\ast$ \hyperlink{class_joueur_a569fa77a585a0e82981bfa6bda149a4f}{get\-Main} ()
+\item 
+std\-::vector$<$ \hyperlink{class_carte}{Carte} $>$ $\ast$ \hyperlink{class_joueur_abe6504e86cf56787e5569c296e3bfde7}{get\-Board} ()
+\item 
+bool \hyperlink{class_joueur_a0b94001f3dd61af944bd7128d143ac11}{ajouter\-Main} (\hyperlink{class_carte}{Carte} c)
+\item 
+bool \hyperlink{class_joueur_a5046cd3251b93c58558ca273db1aa23b}{ajouter\-Board} (\hyperlink{class_carte}{Carte} c)
+\item 
+bool \hyperlink{class_joueur_ae1c641d98c6e9fda547c3b7e923f085e}{supprimer\-Main} (int index)
+\item 
+bool \hyperlink{class_joueur_af086855b254a628bc9c07047142fb33c}{supprimer\-Board} (int index)
+\item 
+std\-::string \hyperlink{class_joueur_a4a41ec6aaa2e7b4a55807b86cc286876}{afficher\-Main} ()
+\item 
+std\-::string \hyperlink{class_joueur_aae890e668b097dddee94a61404553c8f}{afficher\-Board} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_joueur_a055a0bc38f47a424243d44e7078af129}{\index{Joueur@{Joueur}!Joueur@{Joueur}}
+\index{Joueur@{Joueur}!Joueur@{Joueur}}
+\subsubsection[{Joueur}]{\setlength{\rightskip}{0pt plus 5cm}Joueur\-::\-Joueur (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{nom, }
+\item[{std\-::string}]{fichier}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a055a0bc38f47a424243d44e7078af129}
+Constructeur. 
+\begin{DoxyParams}{Paramètres}
+{\em nom} & string le nom du joueur \\
+\hline
+{\em fichier} & string le fichier utilisé pour creer le deck \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_a9fb594f755601ee77ce5884c4c0861f3}{\index{Joueur@{Joueur}!$\sim$\-Joueur@{$\sim$\-Joueur}}
+\index{$\sim$\-Joueur@{$\sim$\-Joueur}!Joueur@{Joueur}}
+\subsubsection[{$\sim$\-Joueur}]{\setlength{\rightskip}{0pt plus 5cm}Joueur\-::$\sim$\-Joueur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a9fb594f755601ee77ce5884c4c0861f3}
+Destructeur. 
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_joueur_aae890e668b097dddee94a61404553c8f}{\index{Joueur@{Joueur}!afficher\-Board@{afficher\-Board}}
+\index{afficher\-Board@{afficher\-Board}!Joueur@{Joueur}}
+\subsubsection[{afficher\-Board}]{\setlength{\rightskip}{0pt plus 5cm}string Joueur\-::afficher\-Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_aae890e668b097dddee94a61404553c8f}
+\hypertarget{class_joueur_a4a41ec6aaa2e7b4a55807b86cc286876}{\index{Joueur@{Joueur}!afficher\-Main@{afficher\-Main}}
+\index{afficher\-Main@{afficher\-Main}!Joueur@{Joueur}}
+\subsubsection[{afficher\-Main}]{\setlength{\rightskip}{0pt plus 5cm}string Joueur\-::afficher\-Main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a4a41ec6aaa2e7b4a55807b86cc286876}
+\hypertarget{class_joueur_a5046cd3251b93c58558ca273db1aa23b}{\index{Joueur@{Joueur}!ajouter\-Board@{ajouter\-Board}}
+\index{ajouter\-Board@{ajouter\-Board}!Joueur@{Joueur}}
+\subsubsection[{ajouter\-Board}]{\setlength{\rightskip}{0pt plus 5cm}bool Joueur\-::ajouter\-Board (
+\begin{DoxyParamCaption}
+\item[{{\bf Carte}}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a5046cd3251b93c58558ca273db1aa23b}
+\hypertarget{class_joueur_a0b94001f3dd61af944bd7128d143ac11}{\index{Joueur@{Joueur}!ajouter\-Main@{ajouter\-Main}}
+\index{ajouter\-Main@{ajouter\-Main}!Joueur@{Joueur}}
+\subsubsection[{ajouter\-Main}]{\setlength{\rightskip}{0pt plus 5cm}bool Joueur\-::ajouter\-Main (
+\begin{DoxyParamCaption}
+\item[{{\bf Carte}}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a0b94001f3dd61af944bd7128d143ac11}
+\hypertarget{class_joueur_adab9394b18e1e65a77aa8dad7b51ec28}{\index{Joueur@{Joueur}!get\-Armure@{get\-Armure}}
+\index{get\-Armure@{get\-Armure}!Joueur@{Joueur}}
+\subsubsection[{get\-Armure}]{\setlength{\rightskip}{0pt plus 5cm}int Joueur\-::get\-Armure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_adab9394b18e1e65a77aa8dad7b51ec28}
+Methode qui renvoie le nombre de points d''armure du personnage \begin{DoxyReturn}{Renvoie}
+armure les points d'armure du personnage 
+\end{DoxyReturn}
+\hypertarget{class_joueur_abe6504e86cf56787e5569c296e3bfde7}{\index{Joueur@{Joueur}!get\-Board@{get\-Board}}
+\index{get\-Board@{get\-Board}!Joueur@{Joueur}}
+\subsubsection[{get\-Board}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Carte} $>$ $\ast$ Joueur\-::get\-Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_abe6504e86cf56787e5569c296e3bfde7}
+Methode qui renvoie les pv de la carte \begin{DoxyReturn}{Renvoie}
+pdv int les points de vie de la carte 
+\end{DoxyReturn}
+\hypertarget{class_joueur_a85df9863c4257fe7405a6b1fe7c1e1ef}{\index{Joueur@{Joueur}!get\-C\-P@{get\-C\-P}}
+\index{get\-C\-P@{get\-C\-P}!Joueur@{Joueur}}
+\subsubsection[{get\-C\-P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Comportement\-Pouvoir} $\ast$ Joueur\-::get\-C\-P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a85df9863c4257fe7405a6b1fe7c1e1ef}
+Methode qui renvoie le comportement du pouvoir du personnage \begin{DoxyReturn}{Renvoie}
+C\-P le comportement du pouvoir du personnage 
+\end{DoxyReturn}
+\hypertarget{class_joueur_a5f7a140f00766144edf7d6a5b0f236b7}{\index{Joueur@{Joueur}!get\-Deck@{get\-Deck}}
+\index{get\-Deck@{get\-Deck}!Joueur@{Joueur}}
+\subsubsection[{get\-Deck}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Deck} $\ast$ Joueur\-::get\-Deck (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a5f7a140f00766144edf7d6a5b0f236b7}
+Methode qui renvoie le deck du joueur \begin{DoxyReturn}{Renvoie}
+d \hyperlink{class_deck}{Deck} le deck du \hyperlink{class_joueur}{Joueur} 
+\end{DoxyReturn}
+\hypertarget{class_joueur_a0a2f88581ef12441b03a1cc4ed721b40}{\index{Joueur@{Joueur}!get\-Joueur\-Autre@{get\-Joueur\-Autre}}
+\index{get\-Joueur\-Autre@{get\-Joueur\-Autre}!Joueur@{Joueur}}
+\subsubsection[{get\-Joueur\-Autre}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Joueur} $\ast$ Joueur\-::get\-Joueur\-Autre (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a0a2f88581ef12441b03a1cc4ed721b40}
+Methode qui renvoie le comportement du pouvoir du personnage \begin{DoxyReturn}{Renvoie}
+C\-P le comportement du pouvoir du personnage 
+\end{DoxyReturn}
+\hypertarget{class_joueur_a569fa77a585a0e82981bfa6bda149a4f}{\index{Joueur@{Joueur}!get\-Main@{get\-Main}}
+\index{get\-Main@{get\-Main}!Joueur@{Joueur}}
+\subsubsection[{get\-Main}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Carte} $>$ $\ast$ Joueur\-::get\-Main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a569fa77a585a0e82981bfa6bda149a4f}
+Methode qui renvoie la main du joueur \begin{DoxyReturn}{Renvoie}
+main Vector$<$\-Carte$>$ la main du joueur 
+\end{DoxyReturn}
+\hypertarget{class_joueur_a5ba8036208a35efd6bf37a86b36063b0}{\index{Joueur@{Joueur}!get\-Nom@{get\-Nom}}
+\index{get\-Nom@{get\-Nom}!Joueur@{Joueur}}
+\subsubsection[{get\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Joueur\-::get\-Nom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a5ba8036208a35efd6bf37a86b36063b0}
+Methode qui renvoie les pv de la carte \begin{DoxyReturn}{Renvoie}
+pdv int les points de vie de la carte 
+\end{DoxyReturn}
+\hypertarget{class_joueur_ac950c36b21e1dfc7038d9bb4e1f53361}{\index{Joueur@{Joueur}!get\-Pdm@{get\-Pdm}}
+\index{get\-Pdm@{get\-Pdm}!Joueur@{Joueur}}
+\subsubsection[{get\-Pdm}]{\setlength{\rightskip}{0pt plus 5cm}int Joueur\-::get\-Pdm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_ac950c36b21e1dfc7038d9bb4e1f53361}
+Methode qui renvoie le nombre de points de mana du personnage \begin{DoxyReturn}{Renvoie}
+mana les points de mana du personnage 
+\end{DoxyReturn}
+\hypertarget{class_joueur_ab9297495de7521ac2198c7ce8d38191c}{\index{Joueur@{Joueur}!get\-Pdm\-Tour@{get\-Pdm\-Tour}}
+\index{get\-Pdm\-Tour@{get\-Pdm\-Tour}!Joueur@{Joueur}}
+\subsubsection[{get\-Pdm\-Tour}]{\setlength{\rightskip}{0pt plus 5cm}int Joueur\-::get\-Pdm\-Tour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_ab9297495de7521ac2198c7ce8d38191c}
+Methode qui renvoie le nombre de points de mana du personnage au Tour courant \begin{DoxyReturn}{Renvoie}
+mana les points de mana du personnage 
+\end{DoxyReturn}
+\hypertarget{class_joueur_a3deefa81ebbb921d6cef52322777dee7}{\index{Joueur@{Joueur}!get\-Pdv@{get\-Pdv}}
+\index{get\-Pdv@{get\-Pdv}!Joueur@{Joueur}}
+\subsubsection[{get\-Pdv}]{\setlength{\rightskip}{0pt plus 5cm}int Joueur\-::get\-Pdv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a3deefa81ebbb921d6cef52322777dee7}
+Methode qui renvoie le nombre de points de vie du personnage \begin{DoxyReturn}{Renvoie}
+pdv les points de vie du personnage 
+\end{DoxyReturn}
+\hypertarget{class_joueur_a0344bd2b30346f73e23239b62647e26d}{\index{Joueur@{Joueur}!get\-Pouvoir\-Utilise@{get\-Pouvoir\-Utilise}}
+\index{get\-Pouvoir\-Utilise@{get\-Pouvoir\-Utilise}!Joueur@{Joueur}}
+\subsubsection[{get\-Pouvoir\-Utilise}]{\setlength{\rightskip}{0pt plus 5cm}bool Joueur\-::get\-Pouvoir\-Utilise (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a0344bd2b30346f73e23239b62647e26d}
+Methode qui renvoie un booléen qui indique si le pouvoir a été utilisé \begin{DoxyReturn}{Renvoie}
+pouvoir\-Utilise Booléen etat de l'utilisation du pouvoir 
+\end{DoxyReturn}
+\hypertarget{class_joueur_a2ff017f6e65cad383d00d153ece08045}{\index{Joueur@{Joueur}!set\-A\-R\-M\-U\-R\-E@{set\-A\-R\-M\-U\-R\-E}}
+\index{set\-A\-R\-M\-U\-R\-E@{set\-A\-R\-M\-U\-R\-E}!Joueur@{Joueur}}
+\subsubsection[{set\-A\-R\-M\-U\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::set\-A\-R\-M\-U\-R\-E (
+\begin{DoxyParamCaption}
+\item[{int}]{narmure}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a2ff017f6e65cad383d00d153ece08045}
+Methode qui remplace les points d'armure du personnage par narmure 
+\begin{DoxyParams}{Paramètres}
+{\em narmure} & les nouveaux points d'armure \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_a7b408ea957e1b125a509ec8e88b2c148}{\index{Joueur@{Joueur}!set\-C\-P@{set\-C\-P}}
+\index{set\-C\-P@{set\-C\-P}!Joueur@{Joueur}}
+\subsubsection[{set\-C\-P}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::set\-C\-P (
+\begin{DoxyParamCaption}
+\item[{{\bf Comportement\-Pouvoir} $\ast$}]{C\-P}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a7b408ea957e1b125a509ec8e88b2c148}
+\hypertarget{class_joueur_a81aa9fca9a001be893bfaa607681b086}{\index{Joueur@{Joueur}!set\-Joueur\-Autre@{set\-Joueur\-Autre}}
+\index{set\-Joueur\-Autre@{set\-Joueur\-Autre}!Joueur@{Joueur}}
+\subsubsection[{set\-Joueur\-Autre}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::set\-Joueur\-Autre (
+\begin{DoxyParamCaption}
+\item[{{\bf Joueur} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a81aa9fca9a001be893bfaa607681b086}
+\hypertarget{class_joueur_afa24ba80453522ff059e7e6f46653749}{\index{Joueur@{Joueur}!set\-Nom@{set\-Nom}}
+\index{set\-Nom@{set\-Nom}!Joueur@{Joueur}}
+\subsubsection[{set\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::set\-Nom (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_afa24ba80453522ff059e7e6f46653749}
+Methode qui modifie le nom du joueur 
+\begin{DoxyParams}{Paramètres}
+{\em n} & string le nouveau nom du joueur \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_a199d04e5240f4078ba2f3da2431f0bb2}{\index{Joueur@{Joueur}!set\-P\-D\-M@{set\-P\-D\-M}}
+\index{set\-P\-D\-M@{set\-P\-D\-M}!Joueur@{Joueur}}
+\subsubsection[{set\-P\-D\-M}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::set\-P\-D\-M (
+\begin{DoxyParamCaption}
+\item[{int}]{npdm}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a199d04e5240f4078ba2f3da2431f0bb2}
+Methode qui remplace les points de mana du personnage par npdv 
+\begin{DoxyParams}{Paramètres}
+{\em npdm} & les nouveaux points de mana \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_a3984848768db7e175aeeb51ca89e4eb3}{\index{Joueur@{Joueur}!set\-P\-D\-M\-Tour@{set\-P\-D\-M\-Tour}}
+\index{set\-P\-D\-M\-Tour@{set\-P\-D\-M\-Tour}!Joueur@{Joueur}}
+\subsubsection[{set\-P\-D\-M\-Tour}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::set\-P\-D\-M\-Tour (
+\begin{DoxyParamCaption}
+\item[{int}]{npdmt}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a3984848768db7e175aeeb51ca89e4eb3}
+Methode qui remplace les points de mana du personnage par npdv 
+\begin{DoxyParams}{Paramètres}
+{\em npdm} & les nouveaux points de mana \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_ac4b9408bed0a64ac63188f7f8e1a73d9}{\index{Joueur@{Joueur}!set\-P\-D\-V@{set\-P\-D\-V}}
+\index{set\-P\-D\-V@{set\-P\-D\-V}!Joueur@{Joueur}}
+\subsubsection[{set\-P\-D\-V}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::set\-P\-D\-V (
+\begin{DoxyParamCaption}
+\item[{int}]{npdv}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_ac4b9408bed0a64ac63188f7f8e1a73d9}
+Methode qui remplace les points de vie du personnage par npdv 
+\begin{DoxyParams}{Paramètres}
+{\em npdv} & les nouveaux points de vie \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_a57f6f8d3ff6ba9b5026a51b23e03cd0a}{\index{Joueur@{Joueur}!set\-Pouvoir\-Utilise@{set\-Pouvoir\-Utilise}}
+\index{set\-Pouvoir\-Utilise@{set\-Pouvoir\-Utilise}!Joueur@{Joueur}}
+\subsubsection[{set\-Pouvoir\-Utilise}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::set\-Pouvoir\-Utilise (
+\begin{DoxyParamCaption}
+\item[{bool}]{p}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a57f6f8d3ff6ba9b5026a51b23e03cd0a}
+Methode qui modifie le booléen qui indique si le pouvoir a été utilisé 
+\begin{DoxyParams}{Paramètres}
+{\em p} & Booléen etat de l'utilisation du pouvoir \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_af086855b254a628bc9c07047142fb33c}{\index{Joueur@{Joueur}!supprimer\-Board@{supprimer\-Board}}
+\index{supprimer\-Board@{supprimer\-Board}!Joueur@{Joueur}}
+\subsubsection[{supprimer\-Board}]{\setlength{\rightskip}{0pt plus 5cm}bool Joueur\-::supprimer\-Board (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_af086855b254a628bc9c07047142fb33c}
+\hypertarget{class_joueur_ae1c641d98c6e9fda547c3b7e923f085e}{\index{Joueur@{Joueur}!supprimer\-Main@{supprimer\-Main}}
+\index{supprimer\-Main@{supprimer\-Main}!Joueur@{Joueur}}
+\subsubsection[{supprimer\-Main}]{\setlength{\rightskip}{0pt plus 5cm}bool Joueur\-::supprimer\-Main (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_ae1c641d98c6e9fda547c3b7e923f085e}
+\hypertarget{class_joueur_a99e2e0934bb9307f577d9fa3f219a7b6}{\index{Joueur@{Joueur}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Joueur@{Joueur}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}string Joueur\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a99e2e0934bb9307f577d9fa3f219a7b6}
+Methode qui renvoie une chaine de caracteres qui decrit le personnage
+
+\begin{DoxyReturn}{Renvoie}
+String definition du personnage 
+\end{DoxyReturn}
+\hypertarget{class_joueur_a91239ad650edadbee5b1b51d19242d28}{\index{Joueur@{Joueur}!utiliser\-Pouvoir@{utiliser\-Pouvoir}}
+\index{utiliser\-Pouvoir@{utiliser\-Pouvoir}!Joueur@{Joueur}}
+\subsubsection[{utiliser\-Pouvoir}]{\setlength{\rightskip}{0pt plus 5cm}void Joueur\-::utiliser\-Pouvoir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a91239ad650edadbee5b1b51d19242d28}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+include/\-Modele/\-Joueur/\hyperlink{_joueur_8hpp}{Joueur.\-hpp}\item 
+src/\-Modele/\-Joueur/\hyperlink{_joueur_8cpp}{Joueur.\-cpp}\end{DoxyCompactItemize}

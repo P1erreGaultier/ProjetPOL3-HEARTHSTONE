@@ -1,0 +1,32 @@
+\hypertarget{_comportement_pouvoir_demoniste_8hpp}{\section{Comportement\-Pouvoir\-Demoniste.\-hpp}
+\label{_comportement_pouvoir_demoniste_8hpp}\index{include/\-Controleur/\-Comportement\-Pouvoir/\-Comportement\-Pouvoir\-Demoniste.\-hpp@{include/\-Controleur/\-Comportement\-Pouvoir/\-Comportement\-Pouvoir\-Demoniste.\-hpp}}
+}
+
+\begin{DoxyCode}
+00001 
+00006 \textcolor{preprocessor}{#ifndef COMPORTEMENTPOUVOIRDEMONISTE\_HPP}
+00007 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define COMPORTEMENTPOUVOIRDEMONISTE\_HPP}
+00008 \textcolor{preprocessor}{}
+00009 \textcolor{preprocessor}{#include <string>} \textcolor{comment}{// pour le type std::string}
+00010 \textcolor{preprocessor}{#include "\hyperlink{_comportement_pouvoir_8hpp}{ComportementPouvoir.hpp}"}
+00011 \textcolor{preprocessor}{#include "../../Modele/Joueur/Joueur.hpp"}
+00012 
+00013 \textcolor{comment}{/******************************************************************************/}
+00014 
+\hypertarget{_comportement_pouvoir_demoniste_8hpp_source_l00015}{}\hyperlink{class_comportement_pouvoir_demoniste}{00015} \textcolor{keyword}{class }\hyperlink{class_comportement_pouvoir_demoniste}{ComportementPouvoirDemoniste} : \textcolor{keyword}{public} 
+      \hyperlink{class_comportement_pouvoir}{ComportementPouvoir}
+00016 \{
+00017 
+00018    \textcolor{keyword}{private}:
+00019     \hyperlink{class_joueur}{Joueur}* joueur;
+00020 
+00021    \textcolor{keyword}{public} :
+00022       \hyperlink{class_comportement_pouvoir_demoniste_a1f6b2e5586c6c0e48cd2d88be22e730a}{ComportementPouvoirDemoniste}(\hyperlink{class_joueur}{Joueur}* j);
+00023       \hyperlink{class_comportement_pouvoir_demoniste_a95cd36e0a6e6b10c9931ca1f4b9daad8}{~ComportementPouvoirDemoniste}();
+00024       \textcolor{keywordtype}{void} \hyperlink{class_comportement_pouvoir_demoniste_a85abc906021128b61ba1c292921c411d}{pouvoir}();
+00025     
+00026 \};
+00027 
+00028 \textcolor{preprocessor}{#include "../../../src/Controleur/ComportementPouvoir/ComportementPouvoirDemoniste.cpp"}
+00029 \textcolor{preprocessor}{#endif // ComportementPouvoirDemoniste\_HPP}
+\end{DoxyCode}

@@ -1,0 +1,46 @@
+\hypertarget{_lancement_partie_8hpp}{\section{Lancement\-Partie.\-hpp}
+\label{_lancement_partie_8hpp}\index{include/\-Controleur/\-Lancement\-Partie.\-hpp@{include/\-Controleur/\-Lancement\-Partie.\-hpp}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef LANCEMENTPARTIE\_HPP}
+00002 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define LANCEMENTPARTIE\_HPP}
+00003 \textcolor{preprocessor}{}
+00004 \textcolor{preprocessor}{#include <string>} \textcolor{comment}{// pour les chaines de caracteres}
+00005 \textcolor{preprocessor}{#include <iostream>} \textcolor{comment}{// pour les entrées/sorties}
+00006 \textcolor{preprocessor}{#include <fstream>} \textcolor{comment}{// pour la gestion des flux de fichier}
+00007 \textcolor{preprocessor}{#include <sstream>} \textcolor{comment}{// pour la gestion des flux de string}
+00008 
+00009 
+00010 \textcolor{preprocessor}{#include "../Modele/Joueur/Joueur.hpp"}
+00011 \textcolor{preprocessor}{#include "\hyperlink{_jeu_8hpp}{Jeu.hpp}"}
+00012 \textcolor{preprocessor}{#include "\hyperlink{_fin_de_jeu_8hpp}{FinDeJeu.hpp}"}
+00013 \textcolor{preprocessor}{#include "../Vue/VueConsole.hpp"}
+00014 \textcolor{preprocessor}{#include "\hyperlink{_sujet_8hpp}{Sujet.hpp}"}
+00015 \textcolor{preprocessor}{#include "\hyperlink{_observer_8hpp}{Observer.hpp}"}
+00016 
+00017 
+00018 
+\hypertarget{_lancement_partie_8hpp_source_l00019}{}\hyperlink{class_lancement_partie}{00019} \textcolor{keyword}{class }\hyperlink{class_lancement_partie}{LancementPartie}
+00020 \{
+00021     \textcolor{keyword}{private}:
+00022         \hyperlink{class_joueur}{Joueur}* j1;
+00023         \hyperlink{class_joueur}{Joueur}* j2;
+00024         \hyperlink{class_jeu}{Jeu}* jeu;
+00025         \hyperlink{class_fin_de_jeu}{FinDeJeu}* ob;
+00026         \hyperlink{class_vue_console}{VueConsole} vue;
+00027         
+00028     \textcolor{keyword}{public}: 
+00029     
+00030         \hyperlink{class_lancement_partie_a15c4cd0df7b7b7cd47c26b0f8782adee}{LancementPartie}();
+00031         \hyperlink{class_lancement_partie_a21f3576e8d380d0fd684d5851787bed0}{~LancementPartie}();
+00032         
+00033         \textcolor{keywordtype}{void} \hyperlink{class_lancement_partie_af84e88126249dfdcbbac1daa329f4ce3}{lancerPartie}();
+00034         
+00035         
+00036 \};
+00037 
+00038 
+00039 \textcolor{preprocessor}{#include "../../src/Controleur/LancementPartie.cpp"}
+00040 \textcolor{preprocessor}{#endif // LancementPartie\_HPP       }
+\end{DoxyCode}
