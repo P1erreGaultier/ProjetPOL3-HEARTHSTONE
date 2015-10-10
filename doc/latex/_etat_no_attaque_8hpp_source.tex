@@ -1,0 +1,39 @@
+\hypertarget{_etat_no_attaque_8hpp}{\section{Etat\-No\-Attaque.\-hpp}
+\label{_etat_no_attaque_8hpp}\index{include/\-Controleur/\-Etat\-No\-Attaque.\-hpp@{include/\-Controleur/\-Etat\-No\-Attaque.\-hpp}}
+}
+
+\begin{DoxyCode}
+00001 
+00006 \textcolor{preprocessor}{#ifndef EtatNoAttaque\_HPP}
+00007 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EtatNoAttaque\_HPP}
+00008 \textcolor{preprocessor}{}\textcolor{preprocessor}{#include <string>} \textcolor{comment}{// pour le type std::string}
+00009 \textcolor{preprocessor}{#include "\hyperlink{_etat_8hpp}{Etat.hpp}"}
+00010 
+00011 
+00012 \textcolor{comment}{/******************************************************************************/}
+00013 \textcolor{keyword}{class }\hyperlink{class_jeu}{Jeu};
+00014 
+\hypertarget{_etat_no_attaque_8hpp_source_l00015}{}\hyperlink{class_etat_no_attaque}{00015} \textcolor{keyword}{class }\hyperlink{class_etat_no_attaque}{EtatNoAttaque} : \textcolor{keyword}{public} \hyperlink{class_etat}{Etat}
+00016 \{
+00017 
+00018     \textcolor{keyword}{protected}:
+\hypertarget{_etat_no_attaque_8hpp_source_l00019}{}\hyperlink{class_etat_no_attaque_ad5dbee65b31bd41e28a648ac22bbbfce}{00019}         \hyperlink{class_jeu}{Jeu}* \hyperlink{class_etat_no_attaque_ad5dbee65b31bd41e28a648ac22bbbfce}{jeu}; 
+00020 
+00021     \textcolor{keyword}{public}:
+00022         
+00023         \hyperlink{class_etat_no_attaque_a39b37880a28e5cbda92e584221b9a68d}{EtatNoAttaque}(\hyperlink{class_jeu}{Jeu}* j);
+00024         \hyperlink{class_etat_no_attaque_a81a0114551961e5780e7e3866f22c6fb}{~EtatNoAttaque}();
+00025 
+00026         \hyperlink{class_jeu}{Jeu}* \hyperlink{class_etat_no_attaque_ab98d57f8da5876194e0c1496f137c613}{getJeu}();
+00027         \textcolor{keywordtype}{int} \hyperlink{class_etat_no_attaque_ac89ab0d1f4483c7623617299b08922e3}{afficherChoixEtat}();
+00028         \textcolor{keywordtype}{void} \hyperlink{class_etat_no_attaque_aea58b2b3580f3adbd93a4fa69398b51e}{finTour}();
+00029         
+00030         
+00031         
+00032         
+00033 \};
+00034 
+00035 \textcolor{preprocessor}{#include "\hyperlink{_jeu_8hpp}{Jeu.hpp}"}
+00036 \textcolor{preprocessor}{#include "../../src/Controleur/EtatNoAttaque.cpp"}
+00037 \textcolor{preprocessor}{#endif // EtatNoAttaque\_HPP     }
+\end{DoxyCode}

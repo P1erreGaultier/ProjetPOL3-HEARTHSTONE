@@ -1,0 +1,31 @@
+\hypertarget{_demoniste_8hpp}{\section{Demoniste.\-hpp}
+\label{_demoniste_8hpp}\index{include/\-Modele/\-Joueur/\-Demoniste.\-hpp@{include/\-Modele/\-Joueur/\-Demoniste.\-hpp}}
+}
+
+\begin{DoxyCode}
+00001 
+00006 \textcolor{preprocessor}{#ifndef DEMONISTE\_HPP}
+\hypertarget{_demoniste_8hpp_source_l00007}{}\hyperlink{_demoniste_8hpp_a2a3decece95c07c217e7bdc071aa9efc}{00007} \textcolor{preprocessor}{}\textcolor{preprocessor}{#define GUERRIER\_HPP}
+00008 \textcolor{preprocessor}{}
+00009 \textcolor{preprocessor}{#include <string>} \textcolor{comment}{// pour le type std::string}
+00010 \textcolor{preprocessor}{#include "\hyperlink{_joueur_8hpp}{Joueur.hpp}"}
+00011 \textcolor{preprocessor}{#include "../../Controleur/ComportementPouvoir/ComportementPouvoirDemoniste.hpp"}
+00012 
+00013 
+00014 \textcolor{comment}{/******************************************************************************/}
+00015 
+\hypertarget{_demoniste_8hpp_source_l00016}{}\hyperlink{class_demoniste}{00016} \textcolor{keyword}{class }\hyperlink{class_demoniste}{Demoniste}: \textcolor{keyword}{public} \hyperlink{class_joueur}{Joueur}
+00017 \{   
+00018 
+00019    \textcolor{keyword}{public} :
+00020       \textcolor{comment}{//Constructeur/Destructeur}
+00021       \hyperlink{class_demoniste_af380ca447e054e2096618ac7e2607c5a}{Demoniste}(std::string nom, std::string fichier);
+00022       \hyperlink{class_demoniste_ae66a10386b9ec772fe4b3d9e94deffe8}{~Demoniste}();
+00023    
+00024   
+00025 \};
+00026 
+00027 \textcolor{preprocessor}{#include "../../../src/Modele/Joueur/Demoniste.cpp"}
+00028 
+00029 \textcolor{preprocessor}{#endif // Demoniste\_HPP}
+\end{DoxyCode}

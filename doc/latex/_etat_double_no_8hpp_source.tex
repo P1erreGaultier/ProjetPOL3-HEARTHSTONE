@@ -1,0 +1,39 @@
+\hypertarget{_etat_double_no_8hpp}{\section{Etat\-Double\-No.\-hpp}
+\label{_etat_double_no_8hpp}\index{include/\-Controleur/\-Etat\-Double\-No.\-hpp@{include/\-Controleur/\-Etat\-Double\-No.\-hpp}}
+}
+
+\begin{DoxyCode}
+00001 
+00006 \textcolor{preprocessor}{#ifndef EtatDoubleNo\_HPP}
+00007 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EtatDoubleNo\_HPP}
+00008 \textcolor{preprocessor}{}\textcolor{preprocessor}{#include <string>} \textcolor{comment}{// pour le type std::string}
+00009 \textcolor{preprocessor}{#include "\hyperlink{_etat_8hpp}{Etat.hpp}"}
+00010 
+00011 
+00012 \textcolor{comment}{/******************************************************************************/}
+00013 \textcolor{keyword}{class }\hyperlink{class_jeu}{Jeu};
+00014 
+\hypertarget{_etat_double_no_8hpp_source_l00015}{}\hyperlink{class_etat_double_no}{00015} \textcolor{keyword}{class }\hyperlink{class_etat_double_no}{EtatDoubleNo} : \textcolor{keyword}{public} \hyperlink{class_etat}{Etat}
+00016 \{
+00017 
+00018     \textcolor{keyword}{protected}:
+\hypertarget{_etat_double_no_8hpp_source_l00019}{}\hyperlink{class_etat_double_no_ac1166f725800d6a7f9c0c83bf6d7665e}{00019}         \hyperlink{class_jeu}{Jeu}* \hyperlink{class_etat_double_no_ac1166f725800d6a7f9c0c83bf6d7665e}{jeu}; 
+00020 
+00021     \textcolor{keyword}{public}:
+00022         
+00023         \hyperlink{class_etat_double_no_ac89c20bba357b6fff0d3d8aeead6b894}{EtatDoubleNo}(\hyperlink{class_jeu}{Jeu}* j);
+00024         \hyperlink{class_etat_double_no_a5833701f2f11e8902ceb31626076dd2e}{~EtatDoubleNo}();
+00025 
+00026         \hyperlink{class_jeu}{Jeu}* \hyperlink{class_etat_double_no_a51f05fabae25436634e3b8c1ecdf5aef}{getJeu}();
+00027         \textcolor{keywordtype}{int} \hyperlink{class_etat_double_no_a01af5700d0b3bd927af0d65f95395256}{afficherChoixEtat}();
+00028         \textcolor{keywordtype}{void} \hyperlink{class_etat_double_no_a888b25f87b975d3d92bfaa2cf9ce064d}{finTour}();
+00029         
+00030         
+00031         
+00032         
+00033 \};
+00034 
+00035 \textcolor{preprocessor}{#include "\hyperlink{_jeu_8hpp}{Jeu.hpp}"}
+00036 \textcolor{preprocessor}{#include "../../src/Controleur/EtatDoubleNo.cpp"}
+00037 \textcolor{preprocessor}{#endif // EtatDoubleNo\_HPP      }
+\end{DoxyCode}

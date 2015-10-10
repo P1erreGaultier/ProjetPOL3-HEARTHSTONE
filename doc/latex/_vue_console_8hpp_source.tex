@@ -1,0 +1,70 @@
+\hypertarget{_vue_console_8hpp}{\section{Vue\-Console.\-hpp}
+\label{_vue_console_8hpp}\index{include/\-Vue/\-Vue\-Console.\-hpp@{include/\-Vue/\-Vue\-Console.\-hpp}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*}
+00002 \textcolor{comment}{* Fichier VueConsole.hpp}
+00003 \textcolor{comment}{* @author Pierre Gaultier & Theo Dolez}
+00004 \textcolor{comment}{*/}
+00005 
+00006 
+00007 
+00008 \textcolor{preprocessor}{#ifndef VueConsole\_HPP}
+00009 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define VueConsole\_HPP}
+00010 \textcolor{preprocessor}{}\textcolor{preprocessor}{#include <string>} \textcolor{comment}{// pour le type std::string}
+00011 \textcolor{preprocessor}{#include "../Modele/Joueur/Joueur.hpp"}
+00012 
+00013 
+00014 
+00015 
+00016 \textcolor{comment}{/******************************************************************************/}
+00017 
+\hypertarget{_vue_console_8hpp_source_l00018}{}\hyperlink{class_vue_console}{00018} \textcolor{keyword}{class }\hyperlink{class_vue_console}{VueConsole}
+00019 \{
+00020 
+00021 
+00022     \textcolor{keyword}{private}:
+00023 
+00024  
+00025     
+00026     \textcolor{keyword}{public}:
+00027         \hyperlink{class_vue_console_a3fc6ba85609459d0919cf9ad4fc1056a}{VueConsole}();
+00028         \hyperlink{class_vue_console_a84554327c266781a3ee5422e1dba674b}{~VueConsole}();
+00029         
+00030         \textcolor{comment}{// fonctions d'entrées}
+00031         \textcolor{keywordtype}{int} \hyperlink{class_vue_console_a8a2212cbdd27511f92f29c222957c80c}{getChoixJoueur}();
+00032         \textcolor{keywordtype}{string} \hyperlink{class_vue_console_a5340da9b0a7fad73fe91b26ec6b20f3b}{getNomJoueur}();
+00033 
+00034         \textcolor{comment}{// fonctions de sorties}
+00035         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_a0782f21077f7c1be22e798ec445a4d87}{afficherMain}(\hyperlink{class_joueur}{Joueur}* j);
+00036         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_a44d91e29edaa189252dedd1ee643619d}{afficherChoix}();
+00037         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_a80c7dcfb3eb9a381b37ba46a7ac366af}{afficherChoixDebutTour}();
+00038         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_aeda02f293126db8b72755d223fe2b0e0}{afficherChoixNoMana}();
+00039         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_a52c6059b31bcca4000d94fd2578363b8}{afficherChoixNoAttaque}();
+00040         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_af38fecfa458f233e81f2beeda1610ec3}{afficherChoixDoubleNo}();
+00041         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_a12e8a5246c04cd6ba39fdb29c6b3765a}{afficherChoixCvC}();
+00042         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_ad5941f80c25dd4252db2f803cc9ad7e3}{afficherChoixCvJ}();
+00043         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_a956e2949c9c9b1485eb734ba20affcf4}{afficherBoard}(\hyperlink{class_joueur}{Joueur}* j);
+00044         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_af493448120cfaf5c389f741e30bc7b31}{afficher2Board}(\hyperlink{class_joueur}{Joueur}* j1, \hyperlink{class_joueur}{Joueur}* j2);
+00045         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_ad450cc024c4c7797c18f399b0f4c321c}{afficherPersonnage}(\hyperlink{class_joueur}{Joueur}* j);
+00046         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_ae015f7453d65bb89abef4793addc18ca}{afficherPersonnageAutre}(\hyperlink{class_joueur}{Joueur}* j);
+00047         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_a64ad6e083263f0fadef29b98207cb2aa}{afficherDebutTour}(\hyperlink{class_joueur}{Joueur}* j);
+00048         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_ada125e06218ee32a5dbacc526e28a84c}{afficherFinTour}();
+00049         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_a0f4cab13a73ac5c80881276687a506aa}{afficherJouerCarte}();
+00050         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_a9f1b65a45e8e3da31ae35fa6c4d53dce}{afficherPdmnRestant}(\textcolor{keywordtype}{int} i);
+00051         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_a2b469256d2776aa6e01ebc4bd393c2a3}{afficherPasAssezDeMana}();
+00052         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_a525f3eacad711387238b37a9b64c5406}{afficherChoixPouvoirMage}();
+00053         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_ac1e6d5da6ce2c352d10c665d79c616d0}{afficherChoixPouvoirPretre}();
+00054         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_a884aeedbd65ebe011b86f42d6ae5db04}{afficherChoixPouvoirInduction}();
+00055         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_ad55bf2d0d6397204cccfb488aad39c4e}{afficherChoixCarte}();
+00056         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_a2f811063bc7f2dcac117d7a49df36931}{afficherErreurChoix}();
+00057         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_a9e339ac2f7b3f337d4a2951db490815b}{afficherPasDeCarteAdverse}();
+00058         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_a4a9f289f010e643b5e8a004f3fe539ac}{afficherPasDeCarteBoard}();
+00059         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_a1e9faf3a19588ff0f659dfff4cfcff09}{afficherIntro}();
+00060         \textcolor{keywordtype}{void} \hyperlink{class_vue_console_a945e04f68fb5a0089e35b1b688001b87}{afficherFinIntro}();
+00061         
+00062 \};
+00063 \textcolor{preprocessor}{#include "../../src/Vue/VueConsole.cpp"}
+00064 \textcolor{preprocessor}{#endif // JEU\_HPP       }
+\end{DoxyCode}

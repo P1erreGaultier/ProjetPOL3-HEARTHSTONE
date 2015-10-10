@@ -1,0 +1,82 @@
+\hypertarget{_carte_8hpp}{\section{Carte.\-hpp}
+\label{_carte_8hpp}\index{include/\-Modele/\-Joueur/\-Deck/\-Carte/\-Carte.\-hpp@{include/\-Modele/\-Joueur/\-Deck/\-Carte/\-Carte.\-hpp}}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/* }
+00002 \textcolor{comment}{   Fichier Carte.hpp}
+00003 \textcolor{comment}{   Définition du type Carte}
+00004 \textcolor{comment}{* @author Pierre Gaultier, Théo Dolez}
+00005 \textcolor{comment}{*/}
+00006 
+00007 \textcolor{preprocessor}{#ifndef CARTE\_HPP}
+00008 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define CARTE\_HPP}
+00009 \textcolor{preprocessor}{}
+00010 \textcolor{preprocessor}{#include <string>} \textcolor{comment}{// pour le type std::string}
+00011 
+00012 
+00013 \textcolor{comment}{/******************************************************************************/}
+00014 
+00015 
+00016 
+\hypertarget{_carte_8hpp_source_l00017}{}\hyperlink{class_carte}{00017} \textcolor{keyword}{class }\hyperlink{class_carte}{Carte}
+00018 \{
+00019    \textcolor{keyword}{private} :
+00020    \textcolor{keywordtype}{int} pdv;
+00021    \textcolor{keywordtype}{int} pdvmax;
+00022    \textcolor{keywordtype}{int} pa;
+00023    std::string nom;
+00024    \textcolor{keywordtype}{int} coutmana;
+00025    \textcolor{keywordtype}{bool} charge;
+00026    \textcolor{keywordtype}{bool} provoc;
+00027    \textcolor{keywordtype}{bool} malinvoc;
+00028    \textcolor{keywordtype}{bool} sortilege;
+00029    \textcolor{keywordtype}{int} fct;
+00030    std::string description;   
+00031    
+00032    \textcolor{keyword}{public} :
+00033 
+00034     \hyperlink{class_carte_a06daaca86c31c80f8308f4a81d46dc9b}{Carte}();
+00035     \hyperlink{class_carte_a06daaca86c31c80f8308f4a81d46dc9b}{Carte}(\textcolor{keywordtype}{int} pdv, \textcolor{keywordtype}{int} pa, std::string nom, \textcolor{keywordtype}{int} coutmana, \textcolor{keywordtype}{bool} charge, \textcolor{keywordtype}{bool} provoc, \textcolor{keywordtype}{bool} sort, \textcolor{keywordtype}{int} f, 
+      std::string des); \textcolor{comment}{//construceur}
+00036     \hyperlink{class_carte_a63300ff55c58b5d5b1674a3fc8f25910}{~Carte}(); \textcolor{comment}{// destructeur}
+00037 
+00038     \textcolor{keywordtype}{int} \hyperlink{class_carte_a657918ef04b48d042985550cc9531b96}{getPdv}();
+00039       \textcolor{keywordtype}{void} \hyperlink{class_carte_a002eabf379874c8a989d0ee4469074d0}{setPdv}(\textcolor{keywordtype}{int} i);
+00040   
+00041     \textcolor{keywordtype}{int} \hyperlink{class_carte_a3d71e111f10666ca64f94c48ca2f215f}{getPdvmax}();
+00042     \textcolor{keywordtype}{void} \hyperlink{class_carte_aa997fa354a645b125491589dbc4631d1}{setPdvmax}(\textcolor{keywordtype}{int} i);
+00043         
+00044     \textcolor{keywordtype}{int} \hyperlink{class_carte_a581e595258304eb2ca44dbcf24fade5b}{getPa}();
+00045     \textcolor{keywordtype}{void} \hyperlink{class_carte_ab84e1045db524abd89c715ce8c9e57eb}{setPa}(\textcolor{keywordtype}{int} i);
+00046 
+00047     std::string \hyperlink{class_carte_a3650c2d0ea9877fe29f4673f430daa8e}{getNom}();
+00048     \textcolor{keywordtype}{void} \hyperlink{class_carte_a09ba2c6fba7ce1780e3bfa52f7adb13a}{setNom}(std::string n);
+00049 
+00050     \textcolor{keywordtype}{int} \hyperlink{class_carte_a7af45415441059ab3f3696d3ef711c6a}{getCoutmana}();
+00051     \textcolor{keywordtype}{void} \hyperlink{class_carte_a7965f40ee312b74c9e65601156c8a1b9}{setCoutmana}(\textcolor{keywordtype}{int} i);
+00052   
+00053     \textcolor{keywordtype}{bool} \hyperlink{class_carte_aba4e16959b49ba9c7673c6c3ac848da4}{getCharge}();
+00054     \textcolor{keywordtype}{void} \hyperlink{class_carte_aa432c0b924d602dd602dbec76a2a05fd}{setCharge}(\textcolor{keywordtype}{bool} c);
+00055   
+00056     \textcolor{keywordtype}{bool} \hyperlink{class_carte_aeaa95af6ce4e589556b3e0258a1a1fd5}{getProvoc}();
+00057     \textcolor{keywordtype}{void} \hyperlink{class_carte_a5e107806db0095a43d360eb5aba4f268}{setProvoc}(\textcolor{keywordtype}{bool} p);
+00058       
+00059     \textcolor{keywordtype}{bool} \hyperlink{class_carte_a7586f5cb80e50c331b85b52a99b273f1}{getMalinvoc}();
+00060     \textcolor{keywordtype}{void} \hyperlink{class_carte_a8ae1e50c276ec598c722cc2090aa60bc}{setMalinvoc}(\textcolor{keywordtype}{bool} m);
+00061       
+00062     \textcolor{keywordtype}{bool} \hyperlink{class_carte_a787e408176618c033f3ca3f2477d954e}{getSortilege}();
+00063     \textcolor{keywordtype}{void} \hyperlink{class_carte_adea41dd43ce6833bc82d515063b211b2}{setSortilege}(\textcolor{keywordtype}{bool} m);
+00064       
+00065     \textcolor{keywordtype}{int} \hyperlink{class_carte_abe483c0dfd894f74a7e70bd09c2f81db}{getFct}();
+00066     \textcolor{keywordtype}{void} \hyperlink{class_carte_a2dd4e1213a7c8ac586c899f480565e40}{setFct}(\textcolor{keywordtype}{int} i);
+00067     std::string \hyperlink{class_carte_a71f1d9f42828cd1904d41072c7e1364b}{getDescription}();
+00068     \textcolor{keywordtype}{void} \hyperlink{class_carte_a969792359230516af5306af9c332e4cf}{setDescription}(std::string des);
+00069 
+00070     std::string \hyperlink{class_carte_aa87e41eb0a7e1c296e89a3f8f1bdf98b}{toString}();
+00071             
+00072 \}; \textcolor{comment}{// class Carte}
+00073 \textcolor{comment}{/******************************************************************************/}
+00074 \textcolor{preprocessor}{#include "../../../../../src/Modele/Joueur/Deck/Carte/Carte.cpp"}
+00075 \textcolor{preprocessor}{#endif // CARTE\_HPP}
+\end{DoxyCode}

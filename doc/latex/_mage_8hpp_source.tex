@@ -1,0 +1,30 @@
+\hypertarget{_mage_8hpp}{\section{Mage.\-hpp}
+\label{_mage_8hpp}\index{include/\-Modele/\-Joueur/\-Mage.\-hpp@{include/\-Modele/\-Joueur/\-Mage.\-hpp}}
+}
+
+\begin{DoxyCode}
+00001 
+00006 \textcolor{preprocessor}{#ifndef Mage\_HPP}
+00007 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define Mage\_HPP}
+00008 \textcolor{preprocessor}{}
+00009 \textcolor{preprocessor}{#include <string>} \textcolor{comment}{// pour le type std::string}
+00010 \textcolor{preprocessor}{#include "\hyperlink{_joueur_8hpp}{Joueur.hpp}"}
+00011 \textcolor{preprocessor}{#include "../../Controleur/ComportementPouvoir/ComportementPouvoirMage.hpp"}
+00012 
+00013 
+00014 \textcolor{comment}{/******************************************************************************/}
+00015 
+\hypertarget{_mage_8hpp_source_l00016}{}\hyperlink{class_mage}{00016} \textcolor{keyword}{class }\hyperlink{class_mage}{Mage}: \textcolor{keyword}{public} \hyperlink{class_joueur}{Joueur}
+00017 \{   
+00018    \textcolor{keyword}{public} :
+00019       \textcolor{comment}{//Constructeur/Destructeur}
+00020       \hyperlink{class_mage_afd12913f92aeb59dceb83ad1d6753ae9}{Mage}(std::string nom, std::string fichier);
+00021       \hyperlink{class_mage_a0a3f693b67379cde4fcf2fa1622211ca}{~Mage}();
+00022    
+00023   
+00024 \};
+00025 
+00026 \textcolor{preprocessor}{#include "../../../src/Modele/Joueur/Mage.cpp"}
+00027 
+00028 \textcolor{preprocessor}{#endif // Mage\_HPP}
+\end{DoxyCode}

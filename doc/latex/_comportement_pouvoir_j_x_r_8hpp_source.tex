@@ -1,0 +1,33 @@
+\hypertarget{_comportement_pouvoir_j_x_r_8hpp}{\section{Comportement\-Pouvoir\-J\-X\-R.\-hpp}
+\label{_comportement_pouvoir_j_x_r_8hpp}\index{include/\-Controleur/\-Comportement\-Pouvoir/\-Comportement\-Pouvoir\-J\-X\-R.\-hpp@{include/\-Controleur/\-Comportement\-Pouvoir/\-Comportement\-Pouvoir\-J\-X\-R.\-hpp}}
+}
+
+\begin{DoxyCode}
+00001 
+00006 \textcolor{preprocessor}{#ifndef COMPORTEMENTPOUVOIRJXR\_HPP}
+00007 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define COMPORTEMENTPOUVOIRJXR\_HPP}
+00008 \textcolor{preprocessor}{}
+00009 \textcolor{preprocessor}{#include <string>} \textcolor{comment}{// pour le type std::string}
+00010 \textcolor{preprocessor}{#include "\hyperlink{_comportement_pouvoir_8hpp}{ComportementPouvoir.hpp}"}
+00011 \textcolor{preprocessor}{#include "../../Vue/VueConsole.hpp"}
+00012 \textcolor{preprocessor}{#include "../../Modele/Joueur/Joueur.hpp"}
+00013 
+00014 \textcolor{comment}{/******************************************************************************/}
+00015 
+\hypertarget{_comportement_pouvoir_j_x_r_8hpp_source_l00016}{}\hyperlink{class_comportement_pouvoir_j_x_r}{00016} \textcolor{keyword}{class }\hyperlink{class_comportement_pouvoir_j_x_r}{ComportementPouvoirJXR} : \textcolor{keyword}{public} \hyperlink{class_comportement_pouvoir}{ComportementPouvoir}
+00017 \{
+00018 
+00019    \textcolor{keyword}{private}:
+00020     \hyperlink{class_joueur}{Joueur}* joueur;
+00021     \hyperlink{class_vue_console}{VueConsole}* vue;
+00022 
+00023    \textcolor{keyword}{public} :
+00024       \hyperlink{class_comportement_pouvoir_j_x_r_a6bfa37111b1d6add5cabd1c5a433291b}{ComportementPouvoirJXR}(\hyperlink{class_joueur}{Joueur}* j);
+00025       \hyperlink{class_comportement_pouvoir_j_x_r_a60e6ba18e25818261a5c11bd6780db10}{~ComportementPouvoirJXR}();
+00026       \textcolor{keywordtype}{void} \hyperlink{class_comportement_pouvoir_j_x_r_a3d40cb49543bd69accaa1ddfb09aa9cc}{pouvoir}();
+00027     
+00028 \};
+00029 
+00030 \textcolor{preprocessor}{#include "../../../src/Controleur/ComportementPouvoir/ComportementPouvoirJXR.cpp"}
+00031 \textcolor{preprocessor}{#endif // ComportementPouvoirJXR\_HPP}
+\end{DoxyCode}

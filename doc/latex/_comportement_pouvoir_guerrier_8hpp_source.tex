@@ -1,0 +1,32 @@
+\hypertarget{_comportement_pouvoir_guerrier_8hpp}{\section{Comportement\-Pouvoir\-Guerrier.\-hpp}
+\label{_comportement_pouvoir_guerrier_8hpp}\index{include/\-Controleur/\-Comportement\-Pouvoir/\-Comportement\-Pouvoir\-Guerrier.\-hpp@{include/\-Controleur/\-Comportement\-Pouvoir/\-Comportement\-Pouvoir\-Guerrier.\-hpp}}
+}
+
+\begin{DoxyCode}
+00001 
+00006 \textcolor{preprocessor}{#ifndef COMPORTEMENTPOUVOIRGUERRIER\_HPP}
+00007 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define COMPORTEMENTPOUVOIRGUERRIER\_HPP}
+00008 \textcolor{preprocessor}{}
+00009 \textcolor{preprocessor}{#include <string>} \textcolor{comment}{// pour le type std::string}
+00010 \textcolor{preprocessor}{#include "\hyperlink{_comportement_pouvoir_8hpp}{ComportementPouvoir.hpp}"}
+00011 \textcolor{preprocessor}{#include "../../Modele/Joueur/Joueur.hpp"}
+00012 
+00013 \textcolor{comment}{/******************************************************************************/}
+00014 
+\hypertarget{_comportement_pouvoir_guerrier_8hpp_source_l00015}{}\hyperlink{class_comportement_pouvoir_guerrier}{00015} \textcolor{keyword}{class }\hyperlink{class_comportement_pouvoir_guerrier}{ComportementPouvoirGuerrier} : \textcolor{keyword}{public} 
+      \hyperlink{class_comportement_pouvoir}{ComportementPouvoir}
+00016 \{
+00017 
+00018    \textcolor{keyword}{private}:
+00019     \hyperlink{class_joueur}{Joueur}* joueur;
+00020 
+00021    \textcolor{keyword}{public} :
+00022       \hyperlink{class_comportement_pouvoir_guerrier_a5b4e19698e98c3d7a58a3859c6ca5118}{ComportementPouvoirGuerrier}(\hyperlink{class_joueur}{Joueur}* j);
+00023       \hyperlink{class_comportement_pouvoir_guerrier_ae5113657a16d91283b311f18aa32b1e9}{~ComportementPouvoirGuerrier}();
+00024       \textcolor{keywordtype}{void} \hyperlink{class_comportement_pouvoir_guerrier_a2747bbff54360379e100aa62254a2a79}{pouvoir}();
+00025     
+00026 \};
+00027 
+00028 \textcolor{preprocessor}{#include "../../../src/Controleur/ComportementPouvoir/ComportementPouvoirGuerrier.cpp"}
+00029 \textcolor{preprocessor}{#endif // ComportementPouvoirGuerrier\_HPP}
+\end{DoxyCode}

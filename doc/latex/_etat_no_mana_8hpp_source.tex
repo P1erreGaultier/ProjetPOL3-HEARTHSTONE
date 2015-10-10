@@ -1,0 +1,39 @@
+\hypertarget{_etat_no_mana_8hpp}{\section{Etat\-No\-Mana.\-hpp}
+\label{_etat_no_mana_8hpp}\index{include/\-Controleur/\-Etat\-No\-Mana.\-hpp@{include/\-Controleur/\-Etat\-No\-Mana.\-hpp}}
+}
+
+\begin{DoxyCode}
+00001 
+00006 \textcolor{preprocessor}{#ifndef EtatNoMana\_HPP}
+00007 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define EtatNoMana\_HPP}
+00008 \textcolor{preprocessor}{}\textcolor{preprocessor}{#include <string>} \textcolor{comment}{// pour le type std::string}
+00009 \textcolor{preprocessor}{#include "\hyperlink{_etat_8hpp}{Etat.hpp}"}
+00010 
+00011 
+00012 \textcolor{comment}{/******************************************************************************/}
+00013 \textcolor{keyword}{class }\hyperlink{class_jeu}{Jeu};
+00014 
+\hypertarget{_etat_no_mana_8hpp_source_l00015}{}\hyperlink{class_etat_no_mana}{00015} \textcolor{keyword}{class }\hyperlink{class_etat_no_mana}{EtatNoMana} : \textcolor{keyword}{public} \hyperlink{class_etat}{Etat}
+00016 \{
+00017 
+00018     \textcolor{keyword}{protected}:
+\hypertarget{_etat_no_mana_8hpp_source_l00019}{}\hyperlink{class_etat_no_mana_a8ddcdb9981a36c8baa31d1979272ff72}{00019}         \hyperlink{class_jeu}{Jeu}* \hyperlink{class_etat_no_mana_a8ddcdb9981a36c8baa31d1979272ff72}{jeu}; 
+00020 
+00021     \textcolor{keyword}{public}:
+00022         
+00023         \hyperlink{class_etat_no_mana_a506d5de276476b23f9c86864b4c439fa}{EtatNoMana}(\hyperlink{class_jeu}{Jeu}* j);
+00024         \hyperlink{class_etat_no_mana_aaae2ecdedcef4451b0a0f7c88aad4c71}{~EtatNoMana}();
+00025 
+00026         \hyperlink{class_jeu}{Jeu}* \hyperlink{class_etat_no_mana_a153d0656498f8e15d0c550fc4898f5fe}{getJeu}();
+00027         \textcolor{keywordtype}{int} \hyperlink{class_etat_no_mana_aa67bb9f558eaef0d07939a4747d12192}{afficherChoixEtat}();
+00028         \textcolor{keywordtype}{void} \hyperlink{class_etat_no_mana_a14567fee07c6c1a541885fcf2499cd56}{finTour}();
+00029         
+00030         
+00031         
+00032         
+00033 \};
+00034 
+00035 \textcolor{preprocessor}{#include "\hyperlink{_jeu_8hpp}{Jeu.hpp}"}
+00036 \textcolor{preprocessor}{#include "../../src/Controleur/EtatNoMana.cpp"}
+00037 \textcolor{preprocessor}{#endif // EtatNoMana\_HPP        }
+\end{DoxyCode}
